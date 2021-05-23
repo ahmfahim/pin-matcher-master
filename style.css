@@ -1,9 +1,14 @@
 *{
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 body {
-    background: #10101B;
+    background: #fafafa;
     height: 100vh;
+    background-image: url(./image/Untitled-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
     margin-top: 30px;
@@ -11,21 +16,22 @@ body {
 
 .half-width {
     height: 570px;
-    background: #222436;
+    background: #ffffff;
     padding: 30px;
     text-align: center;
+    box-shadow: 3px 3px 5px rgb(197, 197, 197);
 }
 .generate-btn{
     margin-top: 140px;
     width: 180px;
     padding: 50px;
-    border-radius: 50%;
-    border: 8px solid #39458C;
-    background-color: #495BC3;
+    border-radius: 100%;
+    background-color: #6600ff;
     color: #ffffff;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    box-shadow: 3px 3px 5px rgb(197, 197, 197);
 }
 .generate-btn:focus{
     outline: none;
@@ -33,18 +39,20 @@ body {
 }
 
 input[type='text']{
-    background-color: #3D4153;
+    background-color: #ffffff;
     padding: 10px 0px;
-    color: #ffffff;
+    color: #6600ff;
     width: 80%;
     margin: 0 auto;
-    border: 2px solid #858299;
+    border:none;
+    box-shadow: 3px 3px 5px rgb(197, 197, 197);
     height: 50px;
     padding: 10px;
+    text-align: center;
 }
 input[type='text']:focus {
-    background-color: #3D4153;
-    color: #fff;
+    background-color: #fcfcfc;
+    color: black;
     font-size: 20px;
 }
 .numbers {
@@ -64,10 +72,11 @@ width: 100%;
 
 .button {
 width: 20%;
-background: #425062;
-color: #fff;
+background: #ffffff;
+color: #6600ff;
 padding: 20px 0;
 margin: 5px;
+box-shadow: 3px 3px 5px rgb(197, 197, 197);
 display: inline-block;
 font-size: 25px;
 text-align: center;
@@ -83,18 +92,20 @@ color: #E0B612;
     border: none;
     margin-top: 20px;
     padding: 10px 120px;
-    border-radius: 5px;
-    background: #495BC3;
+    background: #6600ff;
     color: #fff;
+    box-shadow: 3px 3px 5px rgb(197, 197, 197);
+    border: none;
 }
 .notify {
     color: #fff;
     text-align: center;
     margin: 0 auto;
-    background: #222436;
+    background: #6600ff;
     margin-top: 20px;
-    border-radius: 15px;
     padding: 5px 20px;
+    box-shadow: 3px 3px 5px rgb(197, 197, 197);
+
 }
 .notify-section{
     width: 35%;
@@ -103,4 +114,10 @@ color: #E0B612;
 .action-left {
     color: #FF3C5F;
     margin-top: 10px;
+}
+#right-pin{
+    display: none;
+}
+#wrong-pin{
+    display: none;
 }
