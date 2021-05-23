@@ -16,6 +16,7 @@ let generatorBtn = getBtnId("pin-generator-btn", function(){
 
     document.getElementById("right-pin").style.display ="none";
     document.getElementById("wrong-pin").style.display = "none";
+    document.querySelector('.action-left').style.display = "none"
 })
 
 // get input-submit-pin id
@@ -52,11 +53,12 @@ let submitBtn = getBtnId("submit-btn", ()=>{
         document.getElementById("right-pin").style.display ="none";
         document.getElementById("wrong-pin").style.display = "block";
         if(count < 1){
-            document.querySelector('.action-left').innerHTML = 'No more try'
+            document.querySelector('.action-left').innerHTML = 'No more try';
             inputSubmitPin.value = '';
             pinNumber.value = '';
         }else{
-            document.querySelector('.action-left').innerHTML = count-- + ' try left'
+            document.querySelector('.action-left').style.display = "block";
+            document.querySelector('.action-left').innerHTML = count-- + ' try left';
             inputSubmitPin.value = '';
         }
     }
